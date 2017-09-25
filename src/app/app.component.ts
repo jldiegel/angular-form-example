@@ -16,7 +16,8 @@ model: object = {
   last_name: "Smith"
 }
 
-  onSubmit(){
+  onSubmit(data: NgForm){
+    console.log(data.value)
     console.log(this.model)
   }
 
